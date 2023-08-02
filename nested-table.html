@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <title>Document</title>
+    </head>
+
+    <body>
+        <h3>Nested Tables <small class="text-muted">with tree view-like connecting lines</small></h3>
+
+        <br>
+        <table class="table table-condensed">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Header</th>
+                    <th>Header</th>
+                    <th>Header</th>
+                    <th>Header</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="tr-detail" class="tr-detail hidden">
+                    <td></td>
+                    <td colspan="4">
+                        <div class="detail-content">
+                            <ul>
+                                <li>
+                                    <div class="detail"></div>
+
+                                    <div class="detail detail-main">
+                                        <fieldset>
+                                            <legend><span class="label label-primary">Nested Data</span></legend>
+                                            <div>
+                                                <table class="table table-condensed">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Header</th>
+                                                            <th>Header</th>
+                                                            <th>Header</th>
+                                                            <th>Header</th>
+                                                            <th>Header</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tr>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </fieldset>
+                                        <!-- 								<div class="panel panel-default">
+								<div class="panel-heading">Nested Data</div>
+									<div class="panel-body">
+										<table class="table table-condensed">
+											<thead>
+												<tr>
+													<th>Header</th>
+													<th>Header</th>
+													<th>Header</th>
+													<th>Header</th>
+													<th>Header</th>
+												</tr>
+											</thead>
+											<tr>
+												<td>123</td>
+												<td>123</td>
+												<td>123</td>
+												<td>123</td>
+												<td>123</td>
+											</tr>
+										</table>
+									</div>
+								</div> -->
+
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="detail"></div>
+
+                                    <div class="detail detail-main">
+                                        <fieldset>
+                                            <legend><span class="label label-primary">Nested Data</span></legend>
+                                            <div>
+                                                <table class="table table-condensed">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Header</th>
+                                                            <th>Header</th>
+                                                            <th>Header</th>
+                                                            <th>Header</th>
+                                                            <th>Header</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tr>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </fieldset>
+                                        <!-- 								<div class="panel panel-default">
+								<div class="panel-heading">Nested Data</div>
+									<div class="panel-body">
+										<table class="table table-condensed">
+											<thead>
+												<tr>
+													<th>Header</th>
+													<th>Header</th>
+													<th>Header</th>
+													<th>Header</th>
+													<th>Header</th>
+												</tr>
+											</thead>
+											<tr>
+												<td>123</td>
+												<td>123</td>
+												<td>123</td>
+												<td>123</td>
+												<td>123</td>
+											</tr>
+										</table>
+									</div>
+								</div> -->
+
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="detail"></div>
+
+                                    <div class="detail detail-main">
+                                        <fieldset>
+                                            <legend><span class="label label-primary">Nested Data</span></legend>
+                                            <div>
+                                                <table class="table table-condensed">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Header</th>
+                                                            <th>Header</th>
+                                                            <th>Header</th>
+                                                            <th>Header</th>
+                                                            <th>Header</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tr>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </fieldset>
+                                        <!-- 								<div class="panel panel-default">
+								<div class="panel-heading">Nested Data</div>
+									<div class="panel-body">
+										<table class="table table-condensed">
+											<thead>
+												<tr>
+													<th>Header</th>
+													<th>Header</th>
+													<th>Header</th>
+													<th>Header</th>
+													<th>Header</th>
+												</tr>
+											</thead>
+											<tr>
+												<td>123</td>
+												<td>123</td>
+												<td>123</td>
+												<td>123</td>
+												<td>123</td>
+											</tr>
+										</table>
+									</div>
+								</div> -->
+
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span class="fa fa-chevron-right fa-fw"></span> </td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                </tr>
+                <tr>
+                    <td><span class="fa fa-chevron-right fa-fw"></span> </span>
+                    </td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                </tr>
+                <tr>
+                    <td><span class="fa fa-chevron-right fa-fw"></span> </span>
+                    </td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                </tr>
+                <tr>
+                    <td><span class="fa fa-chevron-right fa-fw"></span> </span>
+                    </td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                </tr>
+                <tr>
+                    <td><span class="fa fa-chevron-right fa-fw"></span> </span>
+                    </td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                </tr>
+            </tbody>
+        </table>
+        <style>
+            @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
+            @import url("https://fonts.googleapis.com/css?family=Roboto:400,300,500,700");
+
+            body {
+                padding: 20px;
+                font-family: "open sans";
+                color: #555;
+            }
+
+            label {
+                font-weight: 600;
+            }
+
+            table {
+                margin-bottom: 0 !important;
+            }
+
+            table tbody>tr>td:first-child {
+                width: 2%;
+                white-space: nowrap;
+            }
+
+            span.fa {
+                transition: all 400ms;
+            }
+
+            span.fa:hover {
+                cursor: pointer !important;
+                color: #333;
+            }
+
+            .tr-selected>td:not(:first-child) {
+                background-color: #337ab7;
+                color: #fff;
+            }
+
+            .tr-detail>td {
+                padding: 0 !important;
+                padding-bottom: 10px !important;
+                border-top: none !important;
+            }
+
+            .tr-detail>td:not(:first-child) {
+                padding: 5px 5px 5px 5px;
+            }
+
+            .detail-content ul,
+            .detail-content li {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            .detail-content ul li {
+                border: 2px dashed #337ab7;
+                border-width: 0 0 0px 1px;
+                display: flex;
+            }
+
+            .detail-content ul li .detail {
+                margin: 0;
+                padding: 0 10px 5px 0;
+                margin-bottom: 10px;
+                flex-grow: 1;
+                flex-basis: 100%;
+            }
+
+            .detail-content ul li .detail fieldset {
+                border: 1px solid #77acd9;
+            }
+
+            .detail-content ul li .detail fieldset legend {
+                font-size: 90%;
+                margin-left: 5px;
+                width: auto;
+                margin-bottom: 0;
+                border: none;
+            }
+
+            .detail-content ul li .detail fieldset>div {
+                margin-left: 5px;
+                margin-right: 12px;
+            }
+
+            .detail-content ul li .detail fieldset>div table.table-condensed tbody>tr>td {
+                padding: 2px;
+            }
+
+            .detail-content ul li .detail:first-child {
+                border-top: 1px dashed #337ab7;
+                flex-basis: 2%;
+                background: #fff;
+                margin-top: 15px;
+            }
+
+            .detail-content ul li:first-child {
+                padding-top: 5px;
+            }
+
+            .detail-content ul li:last-child {
+                margin-bottom: 20px;
+            }
+
+            .detail-content ul li:last-child>.detail {
+                margin-bottom: 0;
+            }
+
+            .detail-content ul li:last-child>.detail:first-child {
+                margin-left: -1px;
+            }
+        </style>
+        <script>
+            (function () {
+                $("span.fa").on("click", function () {
+                    var $span = $(this),
+                        $parentTr = $span.closest("tr");
+
+                    //remove
+                    if ($span.hasClass("fa-rotate-90")) {
+                        $span.removeClass("fa-rotate-90");
+                        $parentTr
+
+                            .next()
+                            .children("td")
+                            .animate({ padding: 0 })
+                            .wrapInner("<div />")
+                            .children()
+                            .slideUp(function () {
+                                var $tr = $(this).closest("tr");
+
+                                // $tr
+                                // 	.prev("tr")
+                                // 	.find(".active")
+                                // 	.removeClass("active");
+                                $tr.remove();
+                                $parentTr.removeClass("tr-selected");
+                            });
+
+                        return;
+                    }
+
+                    //add
+                    $span.addClass("fa-rotate-90");
+                    if ($parentTr.next().hasClass("tr-detail")) return;
+                    $parentTr.addClass("tr-selected");
+                    // 	.eq(1)
+                    // 	.addClass("active");
+                    $("#tr-detail")
+                        .clone()
+                        .removeClass("hidden")
+                        .insertAfter($parentTr)
+                        .children("td")
+                        .animate()
+                        .wrapInner("<div style='display:none'/>")
+                        .children()
+                        .slideDown();
+                });
+
+                // 	$("i.fa").on("click", function() {
+                // 		$(this).closest("tr").next().removeClass("hidden").find("div.collapse").collapse("toggle");
+                // 	});
+
+                // 	$("div.collapse").on("hidden.bs.collapse", function(){
+                // 		$(this).closest("tr").children("td").css("padding","0")
+                // 								$(this).closest("tr").addClass("hidden")
+                // 								});
+            })();
+
+        </script>
+    </body>
+
+</html>
